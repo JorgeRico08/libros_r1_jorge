@@ -21,7 +21,7 @@ exports.postcreate = function(req, res){
     } else {
       console.log("Datos insertados correctamente");
       console.log(result);
-      res.redirect('/libros');
+      res.redirect('/home');
     }
   });
 }
@@ -49,7 +49,7 @@ exports.getUpdate = function(req, res){
          console.log(err.message)
      } else {
          console.log('Datos acutailizados correctamente');
-         res.redirect('/libros')
+         res.redirect('/home')
      }
  })
 }
@@ -77,7 +77,7 @@ exports.delete = function(req, res){
             console.log(err.message)
         } else {
             console.log('Dato eliminado correctamente');
-            res.redirect('/libros')
+            res.redirect('/home')
         }
     })
 }
